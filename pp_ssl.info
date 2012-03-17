@@ -1,0 +1,6 @@
+; $Id$
+package = Piratenpartei
+name = Piratenpartei SSL
+description = Dummy-Modul zum Signalisieren einer SSL-Website.
+core = 6.x
+version = "6.x-1.0"

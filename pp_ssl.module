@@ -1,0 +1,38 @@
+<?php
+
+/**
+*
+*/
+#function pp_ssl_init() {
+#}
+
+
+/**
+* Display help and module information.
+* @param path
+*   Which path of the site we're displaying help.
+* @param arg
+*   Array that holds the current path as would be returned from arg() function.
+* @return
+*   help text for the path.
+*/
+function pp_ssl_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case "admin/help#pp_ssl":
+      $output = '<p>'. t("Fügt das notwendige Javascript in den Header ein.").'</p>';
+      break;
+  }
+  return $output;
+} // function pp_ssl_help
+
+
+/**
+* Valid permissions for this module
+* @return array An array of valid permissions for the pp_ssl module
+*/
+#function pp_ssl_perm() {
+#  return array('administer pp_ssl');
+#} // function pp_ssl_perm()
+
+?>
